@@ -8,21 +8,22 @@
   <body>
     <script>
       // Get the current date
-      var currentDate = new Date();
+      //   const currentDate = new Date();
 
       // Determine the current quarter
-      var currentQuarter = Math.floor(currentDate.getMonth() / 3);
+      //   const currentQuarter = Math.floor(currentDate.getMonth() / 3);
 
       // Define survey URLs for each quarter
-      var surveyURLs = [
+      const surveyURLs = [
         'https://www.facebook.com/VictoriaCourtVC/',
         'https://twitter.com/victoriacourtvc',
         'https://www.instagram.com/victoriacourtvc/',
         'https://www.youtube.com/victoriacourtvc',
       ];
+      const index = Math.floor(Math.random() * surveyURLs.length);
 
       // Redirect to the appropriate survey URL
-      window.location.href = surveyURLs[currentQuarter];
+      window.location.href = surveyURLs[index];
     </script>
   </body>
 </html>
