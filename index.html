@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect Page</title>
+  </head>
+  <body>
+    <script>
+      // Get the current date
+      var currentDate = new Date();
+
+      // Determine the current quarter
+      var currentQuarter = Math.floor(currentDate.getMonth() / 3);
+
+      // Define survey URLs for each quarter
+      var surveyURLs = [
+        'https://www.facebook.com/VictoriaCourtVC/',
+        'https://twitter.com/victoriacourtvc',
+        'https://www.instagram.com/victoriacourtvc/',
+        'https://www.youtube.com/victoriacourtvc',
+      ];
+
+      // Redirect to the appropriate survey URL
+      window.location.href = surveyURLs[currentQuarter];
+    </script>
+  </body>
+</html>
