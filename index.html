@@ -14,16 +14,20 @@
       //   const currentQuarter = Math.floor(currentDate.getMonth() / 3);
 
       // Define survey URLs for each quarter
-      const surveyURLs = [
-        'https://www.facebook.com/VictoriaCourtVC/',
-        'https://twitter.com/victoriacourtvc',
-        'https://www.instagram.com/victoriacourtvc/',
-        'https://www.youtube.com/victoriacourtvc',
-      ];
-      const index = Math.floor(Math.random() * surveyURLs.length);
+      function redirect() {
+        const surveyURLs = [
+          'https://www.facebook.com/VictoriaCourtVC/',
+          'https://twitter.com/victoriacourtvc',
+          'https://www.instagram.com/victoriacourtvc/',
+          'https://www.youtube.com/victoriacourtvc',
+        ];
 
-      // Redirect to the appropriate survey URL
-      window.location.href = surveyURLs[index];
+        // Redirect to the appropriate survey URL
+        const index = Math.floor(Math.random() * surveyURLs.length);
+        window.location.href = surveyURLs[index];
+      }
+
+      redirect();
     </script>
   </body>
 </html>
